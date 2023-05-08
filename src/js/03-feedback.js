@@ -27,11 +27,11 @@ function fillForm() {
 
 function clearForm(e) {
   e.preventDefault();
-  console.log(data);
   localStorage.clear();
   formEl.reset();
   
 }
+console.log(data);
 
 formEl.addEventListener('input', throttle(fillForm, 500));
 btnEl.addEventListener('submit', clearForm);
