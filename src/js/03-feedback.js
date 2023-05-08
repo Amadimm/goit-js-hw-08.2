@@ -42,5 +42,7 @@ const clearForm = (e) => {
   
 }
 
+updateForm();
+
 emailForm.addEventListener('input', throttle(fillForm, 500));
 emailForm.addEventListener('submit', clearForm);
